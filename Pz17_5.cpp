@@ -9,7 +9,22 @@ public:
     Vector(double _x, double _y, double _z) : x(_x), y(_y), z(_z)
     {}
 
-    double modul()
+    double GetX()
+    {
+        return x;
+    }
+
+    double GetY()
+    {
+        return y;
+    }
+
+    double GetZ()
+    {
+        return z;
+    }
+
+    double GetModul()
     {
         return std::sqrt(x * x + y * y + z * z);
     }
@@ -24,5 +39,5 @@ int main()
 {
     Vector v(4, 8, 5);
 
-    std::cout << v.modul();
+    std::cout << v.GetModul();
 }
